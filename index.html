@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="urf-8">
+    <title>Sport News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
-    aaaaaaaaaaaaaaa
+    <header class="header">
+        <nav>
+            <a href="/GitHub/sport/index.html"><img src="data:image/png;base64, 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" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active"><a href="./pages/sags.html">Сагс</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Team 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Хөлбөмбөг</a></li>
+                    <li><a href="">Воллейбол</a></li>
+                    <li><a href="./pages/undes_buh.html">Үндэсний бөх</a></li>
+                    <li><a href="./pages/judo.html">Жудо </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="text-box">
+            <h3 class="label">March madness</h3>
+            <a href="" class="title">
+                <h3>No. 1 Means Less Than Ever in March</h3>
+            </a>
+            <div class="dash"></div>
+            <a href="" class="description">
+                Kansas' loss to Arkansas makes back-to-back title winner feel as unattainable as ever
+            </a>
+            <div class="author">By Kerry Miller</div>
+        </div>
+    </section>  
+
+    <section class="topNews">
+        <div class="news">
+            <a class="label">Top News</a>
+            <a href="" class="track">UCLA Advances to Sweet 16</a>
+            <a href="" class="track">No. 1 Houston Holds Off Auburn</a>
+            <a href="" class="track">Princeton Advances to Sweet 16</a>
+        </div>
+
+    </section>
+
+    <section class="content">
+        <div class="content-img">
+            <img src="images/Image01.jpeg" alt="">
+        </div>
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+        <div class="content-img">
+            <img src="images/Image02.png" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-img">
+            <img src="images/Image03.png" alt="">
+        </div>
+        <div class="content-text">
+            <h3>Latest Playoff Bracket Predictions</h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <hr class="solid">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+    </footer>
 </body>
 </html>

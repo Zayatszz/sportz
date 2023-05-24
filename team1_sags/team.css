@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    /* --bg-color: #252424;  */
+    --bg-color: #2b2c2d; 
+    --second-bg-color: red;
+    --text-color: #fff; 
+}
+
+.header {
+    width: auto;
+    background-color: var(--bg-color);
+    padding: 0 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}  
+
+nav a {
+    flex: 0;
+}
+
+nav img {
+    width: 20px;
+   
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-links ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li:hover,
+.nav-links ul li.active {    
+    background-color: gray;
+    transition: all .3s ease-in-out;
+    border-radius: 8px;
+}
+
+.nav-links i {
+    color: var(--text-color);
+}
+
+nav .fa {
+    color: var(--text-color);
+    display: none;
+}
+
+.nav-login {
+    flex: 0;
+}
+
+.nav-login a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid var(--text-color);
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1  {
+    display: block;
+    position: relative;
+    margin-left: -15px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin-left: 6px;
+}
+
+.nav-links ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    text-align: left;
+}
+
+.banner {
+    width: auto;
+    min-height: 120vh;
+    background-image: url(/zurag/coolguy.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .text-box {
+    position: absolute;
+    max-height: 70%;
+    max-width: 28%;
+    bottom: 7%;
+    right: 5%;
+    background-color: var(--text-color);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.banner .text-box .label {
+    background-color: var(--second-bg-color);
+    letter-spacing: 2px;
+    font-size: 11px;
+    padding: 10px 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.banner .text-box .title {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.banner .text-box .title h3 {
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: 700;
+    padding: 0 16px 20px;
+}
+
+.banner .text-box .dash {
+    background-color: var(--bg-color);
+    width: 48px;
+    height: 7px;
+    margin: 0 16px;
+}
+ 
+.banner .text-box .description {
+    display: inline-block;
+    color: var(--bg-color);
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 130%;
+    padding: 15px 16px;
+    font-size: 15px;
+}
+
+.banner .text-box .author {
+    font-size: 14px;
+    padding: 0 16px 22px;
+}
+
+@media (max-width: 700px) {
+    .banner .text-box .title h3 {
+        font-size: 16px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        background: var(--bg-color);
+        height: 130vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: var(--text-color);
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .banner .text-box {
+        display: none;
+    }
+
+}
+/* team */
+.h1-text{
+    text-align: center;
+    margin: 40px;
+}
+/* logo, bagiin tuuhtei heseg */
+.sec1{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    /* text-align: center; */
+    margin: 70px;
+    /* margin-left: 70px; */
+}
+.sec1-div1{
+    
+    flex: 50%;
+}
+.sec1-div1 h3{
+    text-align: center;
+}
+.sec1-div1 p{
+    margin-top: 20px;
+    
+}
+.sec1-2{
+    background-color: #fff;
+    margin: 30px;
+
+}
+.sec1-div2{
+    text-align: center;
+    flex: 50%;
+    background-color: #fff;
+}
+.sec1-div1 img{
+    margin-right: 40px;
+    width: 200px;
+    border-radius: 100%;
+    margin-left: 100px;
+}
+.sec1-div1 span{
+   
+    margin-top: 80px;
+    position: absolute;
+    text-align: center;  
+}
+.sec1-div1 h3{
+    margin-top: 50px;
+}
+.banners{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    
+    
+}
+.banners img{
+    width: 100%;
+    height: 100px;
+}
+
+.banners div{
+    flex: 40%;
+    margin: 15px;
+}
+/* .ban-div1
+{
+   flex: 50%;
+    margin: 10px;
+
+}
+.ban-div2
+{
+    flex: 50%;
+    margin: 10px;
+} */
+.sec2{
+    margin: 70px;
+}
+.gishuud 
+{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 250px;
+  
+}
+/* .gishuud div{
+    flex: 0 0 33.333333%;
+   
+} */
+.gishuud div{
+    flex: 50%;
+   
+}
+.gishuud table{
+    width: 100%;
+    border: 1px solid;
+}
+.gishuud table th, td{
+    text-align: center;
+    font-size: 11px;
+}
+.bnew{
+    display: flex;
+    margin-top: 40px;
+    background-color: #fff;
+    margin: 15px;
+   
+}
+.bnew .divt1{
+    flex: 40%;
+}
+.bnew .divt2{
+    flex: 60%;
+    padding-right: 10px;
+}
+.mr-20{
+    margin-right: 20px;
+  }
+.mr-30{
+    margin-right: 30px;
+  }
+.mt-40{
+    margin-top: 40px;
+}
+.bnew ul{
+    
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+}
+.bnew ul li{
+    width: 50%;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* jishee */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  } */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* margin-top: 30px; */
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 4px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */

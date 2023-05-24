@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Сагсан бөмбөгийн сүүлийн үеийн мэдээ мэдээлэл">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+
+  
+    <title>Sport</title>
+
+</head>
+<body style="background-color: rgb(242, 242, 246);">
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="active current dropbtn dropdown"><a href="./pages/sags.html" style="font-size: 14px;">САГС</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="/team1_sags/team1.html">Team1</a>
+                            <a href="#">Team2</a>
+                            <a href="#">Team3</a>
+                        </div>
+                    </li>
+                    <li><a href="" style="font-size: 14px;">ХӨЛБӨМБӨГ</a></li>
+                    <li><a href="" style="font-size: 14px;">ВОЛЛЕЙБОЛ</a></li>
+                    <li><a href="./pages/undes_buh.html" style="font-size: 14px;">ҮНДЭСНИЙ  БӨХ</a></li>
+                    <li><a href="./pages/judo.html" style="font-size: 14px;">ЖУДО </a></li>
+                    <li><a href="./pages/judo.html" style="font-size: 14px;">... </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <!-- <header>            
+        
+        <h1>Logo</h1>
+        <div class="nav">
+          <div class="dropdown">
+
+              <a href="sags.html" class="dropbtn">Сагс</a>
+              <div class="dropdown-content">
+                  <a href="/team1_sags/team1.html">Team1</a>
+                  <a href="#">Team2</a>
+                  <a href="#">Team3</a>
+              </div>
+          </div>
+
+           
+            <a href="football.html">Хөлбөмбөг</a>
+            <a href="volleyball.html">Воллейбол</a>
+            <a href="undes_buh.html">Үндэсний бөх</a>
+            <a href="judo.html">Жудо</a>
+        </div> 
+    </header> -->
+    <!-- <button class="btn1">
+        Хэл сонгох 
+    </button>
+    <button class="btn2">
+        Нэвтрэх
+    </button> -->
+
+    <!-- <h1>...багийн мэдээлэл</h1>
+    <section class="sec1">
+        <div class="logo">
+            <img src="#" alt="logo">
+            <h2>M GARID</h2>
+            <p>Гаргасан амжилт</p>
+        </div>
+        <div>
+            <h2>Багийн түүх</h2>
+        </div>
+    </section>
+    <h1>...багийн тамирчдын мэдээлэл</h1> -->
+    <section class="section">
+        <!-- <h2>Тоглолтын хуваарь</h2> -->
+        <!-- <div class="grid-container">
+
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+            <table id="customers">
+                <tr>
+                  <th>᠎Tomorrow:7AM</th>
+                  <th>Хожилт</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="#" alt="logo">
+                    <span>M GARID</span>
+                  </td>
+                  <td>5</td>
+                </tr>  
+              </table>
+        </div> -->
+        <div class="grid-container fonth">
+            <div class="bg-color1  m-4 ml-20">
+                <label class="dropdown">
+                    <div class="dd-button">
+                      Dropdown
+                    </div>
+                    <input type="checkbox" class="dd-input" id="test">
+                    <ul class="dd-menu">
+                      <li>Action</li>
+                      <li>Another action</li>
+                      <li>Something else here</li>
+                      <li class="divider"></li>
+                      <li>
+                        <a href="http://rane.io">Link to Rane.io</a>
+                      </li>
+                    </ul>
+                  </label>
+                  <div>
+                    Тоглолтын хуваарь <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+              
+             
+            </div>
+            <div class="bg-color1  m-4">
+                <table>
+                    <tr>
+                        <th>᠎Tomorrow:7AM</th>
+                        <th>Win</th>
+                    </tr>
+                   
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                </table>
+              
+            </div>
+            <div class="bg-color1  m-4">
+                <table>
+                    <tr>
+                        <th>᠎Tomorrow:7AM</th>
+                        <th>Win</th>
+                    </tr>
+                   
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                </table>
+              
+            </div>
+            <div class="bg-color1  m-4">
+                <table>
+                    <tr>
+                        <th>᠎Tomorrow:7AM</th>
+                        <th>Win</th>
+                    </tr>
+                   
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                    <tr class="div">
+                        <td class="grid-container">
+                            <img src="/img/logo-garid.jpg" alt="bag1">
+                            <p style="margin: auto;">M GARID</p>
+                        </td>
+                        <td> 13</td>
+                    </tr>
+                </table>
+              
+            </div>
+        
+        
+     
+          
+      
+        </div> 
+      
+
+        <!-- 
+        <div>
+            <h2>Багуудын харьцуулалт</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iste a veritatis, animi tempora quae unde corrupti labore nemo architecto minima aliquid harum velit consequatur. Quia natus facilis iste, atque non voluptatum repellendus tenetur excepturi illum, dolorem animi quae recusandae deleniti in voluptas, explicabo deserunt aperiam laborum possimus! Earum, veritatis?</p>
+        </div>
+        <div>
+            <h2>Шинэ сонирхолтой мэдээ</h2>
+            <img src="#" alt="medee">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente soluta quo quia nisi distinctio, deleniti quis ipsam debitis ea ad.</p>
+        </div> -->
+        
+    </section>
+    <section class="section1" id="zzz">
+        <div class="item left">
+            <div class="m-4" >
+                <h3 >Sport</h3>
+                <ul>
+                    
+                    <li class="borderb">
+                     
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li> 
+                    <li class="borderb">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li>
+                    <li class="borderb">
+                
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li>
+                    <li class="borderb">
+                       
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li>
+                    <li class="borderb">
+                    
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li>
+                    <li class="borderb">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li>
+                    <li class="borderb">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                        
+                    </li> 
+                 
+
+                </ul>
+                
+            </div>
+           
+        </div>
+        <div class="item1 left m">
+            <div class="">
+            <!-- <div class="bg-img"> -->
+
+                <h3>Мэдээ</h3>
+                <div class="borderb">ll</div>
+                <div>aa</div>
+                <div style="margin: 10px;">
+
+                  <img style="width: 100%; height: 300px; border-top-right-radius: 10px; border-top-left-radius: 10px; " src="/img/tenniszurag.jpg" alt="">
+                  <h3>aaaaaaaaaaaaaaaaa</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis enim voluptates nam numquam veniam corporis quibusdam eum beatae architecto rem.</p>
+                </div>
+              </div>
+            <div class="bg-white mb-30">
+
+                <h2 class="">Их үзэлттэй мэдээ</h2>
+                <!-- <div class="grid-container borderb "> -->
+                <div class="borderb grid-container" >
+    
+                    <div >
+                        <a href="https://rutuu.lnk.to/AnotherDay"><iframe src="  https://rutuu.lnk.to/AnotherDay" width="200px" frameborder="0">1</iframe></a>
+                        <p>Гарчиг</p>
+                    </div>
+                    <div >
+                        <a href="https://rutuu.lnk.to/AnotherDay"><iframe src="  https://rutuu.lnk.to/AnotherDay" width="200px" frameborder="0">1</iframe></a>
+                        <p>Гарчиг</p>
+                    </div>
+                    <div >
+                        <a href="https://rutuu.lnk.to/AnotherDay"><iframe src="  https://rutuu.lnk.to/AnotherDay" width="200px" frameborder="0">1</iframe></a>
+                        <p>Гарчиг</p>
+                    </div>
+                 
+                    
+                </div>
+            </div>
+            <div  class="bg-white mb-30">
+
+                <h3>Хүмүүсийн сэтгэгдэл</h3>
+                <div class="grid-container borderb" id="newsjs">
+                    <script type="module" src="/modules/SportNews.js"></script>
+    
+                    <!-- <div>
+                        <a href="#">
+                            <img width="200px" height="150px" src="/img/garid4.jpg" alt="zurag">
+                            <p>Гэрэл: Lorem ipsum dolor sit</p>
+                            <p>Үзэлт:15 <span>3 өдрийн өмнө</span></p>
+                            
+                        </a>
+                    </div>
+               
+                    <div>
+                        <a href="#">
+                            <img width="200px" height="150px" src="/img/garid4.jpg" alt="zurag">
+                            <h3>Гарчиг</h3>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img width="200px" height="150px" src="/img/garid4.jpg" alt="zurag">
+                            <h3>Гарчиг</h3>
+                        </a>
+                    </div>  -->
+           
+                </div>
+            </div>
+            
+        </div>
+        <div class="item2 left">
+            <div class="newlist" >
+                <h3 >Headlines</h3>
+                <ul >
+                    
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                    <li class="borderb grid-container">
+                        <img width="80px" src="/img/contimg.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        
+                    </li> 
+                   
+            
+                 
+
+                </ul>
+                
+            </div>
+            <div class="teamstand mt-30" >
+                
+                <h3 >2022-2023 standing</h3>
+                <table id="customers " >
+                  <thead>
+                    <tr >
+                      <th id="sagsjs" class="p-20">№</th>
+                      <th >Баг</th>
+                      <th class="p-20">Хожилт</th>
+                      <th>Хожигдолт</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbodyjs" style="text-align: center;">
+                    
+                  </tbody>
+                  <script src="sags.js"></script>
+                    <!-- <tr>
+                      <td>1</td>
+                      <td>Нэр</td>
+                      <td>12</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Нэр</td>
+                      <td>12</td>
+                      <td>4</td>
+                    </tr>
+                     -->
+                  </table>
+            </div>
+        </div>
+    </section>
+    <!-- <footer>
+        <h1>&copy; Copyright 2023</h1>
+    </footer> -->
+    
+
+</body>
+</html>

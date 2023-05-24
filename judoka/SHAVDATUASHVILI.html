@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="Жудогын ранк, бөхийн тухай мэдээлэл, жудочдын өгсөн ярилцлага,удахгүй болох тэмцээн">
+        <meta name="keywords" content="Жудо, спорт, ранк, мэдээ, тэмцээн">
+        <meta name="author" content="манай веб" >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Жудо</title>
+        <link rel="stylesheet" href="judoka.css">
+        <script src="../pages/judo.js"></script>
+        <!-- <link rel="stylesheet" href="../style.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+        <style>
+            @media( prefers-color-scheme : dark){
+                body{
+                    color: white;
+                    background-color: black;
+                }
+                .dropdown1{
+                    color: black;
+                }
+                .dropdown-content1{
+                    color: black;
+                }
+                .upcome{
+                    background-color: black;
+                }
+                .dropdown-content{
+                    color: black;
+                }
+            }
+        </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class=" current dropbtn dropdown"><a href="/pages/sags.html" style="font-size: 14px;">САГС</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="sags_team1.html">Team1</a>
+                            <a href="#">Team2</a>
+                            <a href="#">Team3</a>
+                        </div>
+                    </li>
+                    <li><a href="#" style="font-size: 14px;">ХӨЛБӨМБӨГ</a></li>
+                    <li><a href="#" style="font-size: 14px;">ВОЛЛЕЙБОЛ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ҮНДЭСНИЙ  БӨХ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ЖУДО </a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">... </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="rank">
+            <div class="baganiin_tolgoi">
+                <h1>Ranking:</h1>
+            </div>
+            <div style="display: flex;">
+                
+                <div id="G" class="dropdown1" onclick="showGend()"> Gender
+                </div>
+                <div id="gender" class="dropdown-content1">
+                    <ul>
+                        <li onclick="showFE()">Female</li>
+                        <li onclick="showMA()">Male</li>
+                    </ul>
+                </div>
+                <div id="W" class="dropdown1" onclick="showWeight()"> Weight
+                </div>
+                <div id="weight" class="dropdown-content1" style="margin-left: 140px;">
+                    <ul>
+                        <li onclick="dispWeight(-60)">-60</li>
+                        <li onclick="dispWeight(-66)">-66</li>
+                        <li onclick="dispWeight(-73)">-73</li>
+                        <li onclick="dispWeight(-81)">-81</li>
+                        <li onclick="dispWeight(-90)">-90</li>
+                        <li onclick="dispWeight(-100)">-100</li>
+                        <li onclick="dispWeight(+100)">+100</li>
+                    </ul>    
+                </div>
+            </div>
+            <table id="-60">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">YANG YUNG WEI</a></td>
+                    <td>CHINESE TAIPEI</td>
+                    <td><img src="../Ulsiin_tug/tai.png" alt="GEORGIA"></td>    
+                </tr>
+                <tr>        
+                    <td>#2</td>
+                    <td><a href="../judoka/BALABAY.html">AGHAYEV BALABAY</a></td>
+                    <td>AZERBAIJAN</td>
+                    <td><img src="../Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td><a href="../judoka/HARIM.html">LEE HARIM</a></td>
+                    <td>KOREA</td>
+                    <td><img src="../Ulsiin_tug/kor.png" alt="KOREA"></td>
+                </tr>
+            </table>
+            <table id="-66">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">VIERU DENIS</a></td>
+                    <td>MOLDOVA</td>
+                    <td><img src="../Ulsiin_tug/mda.png" alt="MOLDOVA"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">YONDONPERENLEI BASKHUU</a></td>
+                        <td>MONGOLIA</td>
+                        <td><img src="../Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>                
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td><a href="../judoka/SHAVDATUASHVILI.html">ABE HIFUMI</a></td>
+                            <td>JAPAN</td>
+                    <td><img src="../Ulsiin_tug/jpn.png" alt="JAPAN"></td>                
+                </tr>
+            </table>         
+            <table id="-73">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">SHAVDATUASHVILI LASHA</a></td>
+                    <td>GEORGIA</td>
+                    <td><img src="../Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">HEYDAROV HIDAYAT </a> </td>
+                    <td>AZERBAIJAN</td>
+                    <td><img src="../Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>                
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">TSEND-OCHIR TSOGTBAATAR </a> </td>
+                    <td>MONGOLIA</td>
+                    <td><img src="../Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>                
+                </tr>
+            </table>
+            <table id="-81">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">GRIGALASHVILI TATO</a></td>
+                    <td>GEORGIA</td>
+                    <td><img src="../Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">CASSE MATTHIAS</a></td>
+                        <td>BELGIUM</td>
+                        <td><img src="../Ulsiin_tug/bel.png" alt="BELGIUM"></td>                
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td><a href="../judoka/SHAVDATUASHVILI.html">MOLLAEI SAEID</a></td>
+                    <td>AZERBAIJAN</td>
+                    <td><img src="../Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>                
+                </tr>
+            </table>
+            <table id="-90">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">BOBONOV DAVLAT</a></td>
+                    <td>UZBEKISTAN</td>
+                    <td><img src="../Ulsiin_tug/uzb.png" alt="UZBEKISTAN"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">MURAO SANSHIRO</a></td>
+                        <td>JAPAN</td>
+                        <td><img src="../Ulsiin_tug/jpn.png" alt="JAPAN"></td>                
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">GVINIASHVILI BEKA</a></td>
+                    <td>GEORGIA</td>
+                    <td><img src="../Ulsiin_tug/geo.png" alt="GEORGIA"></td>                
+                </tr>
+            </table>
+            <table id="-100">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">SULAMANIDZE ILIA</a></td>
+                    <td>GEORGIA</td>
+                    <td><img src="../Ulsiin_tug/geo.png" alt="GEORGIA"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">KORREL MICHAEL</a></td>
+                        <td>NETHERLAND</td>
+                        <td><img src="../Ulsiin_tug/ned.png" alt="NETHERLAND"></td>                
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">KOTSOIEV ZELYM</a></td>
+                        <td>AZERBAIJAN</td>
+                    <td><img src="../Ulsiin_tug/aze.png" alt="AZERBAIJAN"></td>                
+                </tr>
+            </table>
+            <table id="100">
+                <tr>
+                    <td>#1</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">RAKHIMOV TEMUR</a></td>
+                    <td>TAJIKSTAN</td>
+                    <td><img src="../Ulsiin_tug/tjk.png" alt="TAJIKSTAN"></td>    
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">YUSUPOV ALISHER</a></td>
+                        <td>UZBEKISTAN</td>
+                        <td><img src="../Ulsiin_tug/uzb.png" alt="UZBEKISTAN"></td>                
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td><a href="../judoka/SHAVDATUASHVILI.html">ODKHUU TSETSENTSENGEL</a></td>
+                        <td>MONGOLIA</td>
+                        <td><img src="../Ulsiin_tug/mgl.png" alt="MONGOLIA"></td>                
+                </tr>
+            </table>
+        </div> 
+        <div class="center">
+            <img src="/zurag/shavda.jpg" alt="Shavdatuashvili" class="profile" class="center">
+        
+            <table class="center" style="display: block; border: 1px solid black;">
+                <tr> 
+                    <td>Нэр:</td>
+                    <td>Shavdatuashvili</td> 
+                </tr>
+                <tr> 
+                    <td>Төрсөн өдөр:</td>
+                    <td>1992/01/31</td> 
+                </tr>
+                <tr> 
+                    <td>Өндөр:</td>
+                    <td>167см</td> 
+                </tr>
+                <tr> 
+                    <td>Төрсөн газар:</td>
+                    <td>Georgia, gori</td> 
+                </tr>
+            </table>
+            <table class="center ">
+                <tr>
+                    <td></td>
+                    <td>Алт</td>
+                    <td>Мөнгө</td>
+                    <td>Хүрэл</td>
+                    <td>Тусгай байр</td>
+                </tr>
+                <tr>
+                    <td>Олимп</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Дэлхийн аварга</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Мастерс</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Их дуулга</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>7</td>
+                    <td>14</td>
+                </tr>
+            </table>
+        </div>
+        <div class="upcoming">
+            <div class="baganiin_tolgoi">
+                <h1>Upcoming:</h1>
+            </div>
+            <ol >
+                <li class="upcome">Tbilisi Grand Slam 2023</li>
+                <li class="upcome">Antalya Grand Slam 2023</li>
+            </ol>
+        </div>
+    </div>
+     <footer class="footer" style="background: #2b2c2d; color: white;">
+        <div class="grid-container_footer">
+            <h1 style="padding-left: 40px;" class="item1f">Спортын Mэдээ <br><span>Mэдээллүүд</span> <i class="fa-solid fa-arrow-right"></i> </h1>
+            <div class="item2f" >
+                <h2 onclick="toggleList1()">Бидэнтэй холбогдох <i id="angleIcon1" class="fa-solid fa-angle-down"></i></h2> 
+                <ul style="list-style: none; " id="contact">
+                    <li><i class="fa-solid fa-square-phone"></i> Утасны дугаар</li>
+                    <li><i class="fa-solid fa-envelope"></i> И-мэйл</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Хаяг</li>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                </ul>
+            </div>
+            <div class="item3f">
+               <h2 onclick="toggleList()">Спорт <i id="angleIcon" class="fa-solid fa-angle-down"></i></h2> 
+               
+               <ul id="sportList">
+                <li>Сагсан бөмбөг</li>
+                <li>Воллейбол</li>
+                <li>Үндэсний бөх</li>
+                <li>Жудо</li>
+               </ul>
+              
+            </div>
+            <!-- <div>Menu</div> -->
+            <div class="item4f" >
+                <h2>Сэтгэгдэл</h2>
+                <form action="http://localhost:2000/category" method="POST">
+                    <label for="comment">.</label>
+                    <textarea id="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                    <br>
+                    <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
+                  </form>
+            </div>
+        </div>
+        <hr class="solid">
+        <div style="text-align: center;">
+
+            <h1>About us</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+            <br>
+            <p>
+                @2023 Sport News. Бүх эрх хуулиар хамгаалагдсан.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        function toggleList() {
+        var list = document.getElementById("sportList");
+        var angleIcon = document.getElementById("angleIcon");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
+        function toggleList1() {
+        var list = document.getElementById("contact");
+        var angleIcon = document.getElementById("angleIcon1");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Спортын талаар сүүлийн үеийн мэдээ мэдээлэл">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport News</title>
+    <script src="https://kit.fontawesome.com/f561b3e921.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/sags_mobile.css"> -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/index_mobile.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <a href="index.html"><img src="/images/logo1.jpg" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class=" current dropbtn dropdown"><a href="/pages/sags.html" style="font-size: 14px;">САГС</a>
+                        <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="sags_team1.html">Team1</a>
+                            <a href="#">Team2</a>
+                            <a href="#">Team3</a>
+                        </div>
+                    </li>
+                    <li><a href="#" style="font-size: 14px;">ХӨЛБӨМБӨГ</a></li>
+                    <li><a href="#" style="font-size: 14px;">ВОЛЛЕЙБОЛ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ҮНДЭСНИЙ  БӨХ</a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">ЖУДО </a></li>
+                    <li><a href="/pages/judo.html" style="font-size: 14px;">... </a></li>
+                </ul>
+            </div>
+            <div class="nav-login">
+                <a href="login.html">Нэвтрэх</a>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="text-box">
+            <h3 class="label">March madness</h3>
+            <a href="#" class="title">
+                <h3>No. 1 Means Less Than Ever in March</h3>
+            </a>
+            <div class="dash"></div>
+            <a href="#" class="description">
+                Kansas' loss to Arkansas makes back-to-back title winner feel as unattainable as ever
+            </a>
+            <div class="author">By Kerry Miller</div>
+        </div>
+    </section>  
+
+    <section class="topNews">
+        <div class="news">
+            <a  href="#" class="label">Top News</a>
+            <a href="#" class="track">UCLA Advances to Sweet 16</a>
+            <a href="#" class="track">No. 1 Houston Holds Off Auburn</a>
+            <a href="#" class="track">Princeton Advances to Sweet 16</a>
+        </div>
+
+    </section>
+    <style>
+       
+    </style>
+    <section class="content">
+        <div class="content-img">
+            <img src="/images/Image01.png" alt="">
+        </div>
+        <div class="content-text">
+            <h3 ><span style="--i:1">Latest </span> <span style="--i:2"> Playoff Bracket </span><span style="--i:4"> Predictions</span></h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-text ">
+            <h3 ><span style="--i:1">Latest </span> <span style="--i:2"> Playoff Bracket </span><span style="--i:4"> Predictions</span></h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="content-img img-position">
+            <img src="/images/Image02.png" alt="">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content-img ">
+            <img src="/images/Image03.png" alt="">
+        </div>
+        <div class="content-text">
+            <h3 ><span style="--i:1">Latest </span> <span style="--i:2"> Playoff Bracket </span><span style="--i:4"> Predictions</span></h3>
+            <p>Mavs-Suns in first round? Breaking down how squads could match up this postseason</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- <footer class="footer">
+        <hr class="solid">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+    </footer> -->
+    
+    <footer class="footer" style="background: #2b2c2d; color: white;">
+        <div class="grid-container_footer">
+            <h3 style="padding-left: 40px;" class="item1f">Спортын Mэдээ <br><span>Mэдээллүүд</span> <i class="fa-solid fa-arrow-right"></i> </h3>
+            <div class="item2f" >
+                <h3 onclick="toggleList1()">Бидэнтэй холбогдох <i id="angleIcon1" class="fa-solid fa-angle-down"></i></h3> 
+                <ul style="list-style: none; " id="contact">
+                    <li><i class="fa-solid fa-square-phone"></i> Утасны дугаар</li>
+                    <li><i class="fa-solid fa-envelope"></i> И-мэйл</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Хаяг</li>
+                    <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+                </ul>
+            </div>
+            <div class="item3f">
+               <h3 onclick="toggleList()">Спорт <i id="angleIcon" class="fa-solid fa-angle-down"></i></h3> 
+               
+               <ul id="sportList">
+                <li>Сагсан бөмбөг</li>
+                <li>Воллейбол</li>
+                <li>Үндэсний бөх</li>
+                <li>Жудо</li>
+               </ul>
+              
+            </div>
+            <!-- <div>Menu</div> -->
+            <div class="item4f" >
+                <h3>Сэтгэгдэл</h3>
+                <form action="http://localhost:2000/category" method="POST">
+                    <label for="comment">.</label>
+                    <textarea id="comment" name="comment">Та сэтгэгдлээ бичнэ үү.</textarea>
+                    <br>
+                    <input style="background: red; width: 80px;" type="submit" name="submit" value="Илгээх">
+                  </form>
+                  
+            </div>
+        </div>
+        <hr class="solid">
+        <div style="text-align: center;">
+
+            <h4>About us</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae facere porro aliquid incidunt, voluptatum optio quas <br> nobis deleniti mollitia maxime quos veritatis voluptates ea in est repudiandae iusto, non reiciendis.</p>
+            <br>
+            <p>
+                @2023 Sport News. Бүх эрх хуулиар хамгаалагдсан.
+            </p>
+        </div>
+    </footer>
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        function toggleList() {
+        var list = document.getElementById("sportList");
+        var angleIcon = document.getElementById("angleIcon");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
+        function toggleList1() {
+        var list = document.getElementById("contact");
+        var angleIcon = document.getElementById("angleIcon1");
+        if (list.style.display === "none") {
+        list.style.display = "block";
+        angleIcon.classList.remove("fa-angle-down");
+        angleIcon.classList.add("fa-angle-up");
+        } else {
+        list.style.display = "none";
+        angleIcon.classList.remove("fa-angle-up");
+        angleIcon.classList.add("fa-angle-down");
+        }
+        
+        }
+    </script>
+</body>
+</html>

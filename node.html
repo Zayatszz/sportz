@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My WebApp</title>
+  </head>
+  <body>
+    <h1>Categories</h1>
+    <ul id="categoryList"></ul>
+
+    <script>
+      fetch("http://localhost:2000/category")
+        .then((response) => response.json())
+        .then((categories) => {
+          const categoryList = document.getElementById("categoryList");
+          categories.forEach((category) => {
+            const li = document.createElement("li");
+            li.textContent = category.name;
+            categoryList.appendChild(li);
+          });
+        })
+        .catch((error) => console.error(error));
+        
+    </script>
+  </body>
+</html>
